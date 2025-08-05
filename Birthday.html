@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Bestie 🎉</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Dancing Script', cursive;
+      background: linear-gradient(to bottom right, #ffe6e6, #fff0f5);
+      overflow-x: hidden;
+    }
+
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .heart {
+      position: absolute;
+      color: pink;
+      animation: float 10s linear infinite;
+      font-size: 2rem;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+    }
+
+    .container {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #d63384;
+    }
+
+    .typewriter {
+      display: inline-block;
+      border-right: 2px solid #d63384;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 1.5rem;
+      width: 0;
+      animation: typing 5s steps(60, end) forwards, blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    .love-letter {
+      margin-top: 60px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.8rem;
+      color: #c2185b;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .typewriter {
+        font-size: 1.2rem;
+      }
+
+      .gallery img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+
+  <div class="container">
+    <h1>Hey Bestie 💌</h1>
+    <div class="typewriter">
+      Happy Birthday to the most amazing best friend ever! I’m so lucky to have you in my life 🎂💖
+    </div>
+
+    <div class="love-letter">
+      "Happiest Birthday to the most beautiful soul I know—Sakshi! May your day be as wonderful and full of magic as you are. Always here for you, always cheering for you! 🥳”
+    </div>
+
+    <div class="gallery">
+      <img src="../image\1.jpg" alt="">
+      <img src="../image\2.jpg" alt="">
+      <img src="../image/3.jpg" alt="">
+      <img src="../image\4.jpg" alt="">
+      <img src="../image\5.jpg" alt="">
+      <img src="../image\6.jpg" alt="">
+    </div>
+  </div>
+
+  <audio id="bg-music" autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_401ae4d18e.mp3?filename=happy-birthday-to-you-piano-version-14574.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Floating hearts
+    const heartContainer = document.querySelector('.hearts');
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.innerHTML = '❤️';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+      heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
+      heartContainer.appendChild(heart);
+      setTimeout(() => heart.remove(), 10000);
+    }
+    setInterval(createHeart, 500);
+  </script>
+</body>
+</html>
