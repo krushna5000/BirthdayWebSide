@@ -35,13 +35,21 @@
     </div>
   </div>
 
-  <!-- Frosted gradient bg layer -->
+  <!-- Decorative dreamy blobs -->
+  <div class="bg-ornaments" aria-hidden="true">
+    <span class="blob" style="--x:8%;--y:18%;--s:320px;--o:.22;--h:20deg"></span>
+    <span class="blob" style="--x:78%;--y:12%;--s:220px;--o:.18;--h:-10deg"></span>
+    <span class="blob" style="--x:15%;--y:75%;--s:260px;--o:.18;--h:8deg"></span>
+    <span class="blob" style="--x:82%;--y:78%;--s:300px;--o:.16;--h:-6deg"></span>
+  </div>
+
+  <!-- Frosted gradient bg layer (from original) -->
   <div id="bodyblur">
     <img src="" id="wallpaper" alt="" />
   </div>
 
   <!-- Original interactive gift content (kept and polished) -->
-  <div id="Content">
+  <div id="Content" class="reveal">
     <div id="kadoIn">
       <img src="./Valentine-Surprise.png" alt="Open Gift Button" />
     </div>
@@ -67,7 +75,7 @@
         <div id="kolombaru">
           <li id="lv1">🎂</li>
           <li id="lv2">🎁</li>
-          <li id="lv3">🥳</li>
+          <li id="lv3">✨</li>
           <li id="lv4">💖</li>
         </div>
 
@@ -89,72 +97,62 @@
     </div>
   </div>
 
+  <!-- Wave divider -->
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="#fff0f6" d="M0,64L60,58.7C120,53,240,43,360,48C480,53,600,75,720,85.3C840,96,960,96,1080,96C1200,96,1320,96,1380,96L1440,96L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z"></path>
+  </svg>
+
   <!-- Sections for a modern, romantic experience -->
   <main id="main">
     <!-- About You -->
-    <section id="about" class="section">
+    <section id="about" class="section alt-bg reveal">
       <div class="container">
-        <h2 class="section-title">About You</h2>
+        <h2 class="section-title gradient-text">About You</h2>
         <p class="section-sub">Little things I adore about you</p>
         <ul class="about-list">
-          <li>
-            <span class="about-icon">💗</span>
-            <div><h3>Your Smile</h3><p>It lights up everything around and makes my day instantly better.</p></div>
-          </li>
-          <li>
-            <span class="about-icon">🌸</span>
-            <div><h3>Your Kindness</h3><p>The way you care for others is the softest, sweetest magic.</p></div>
-          </li>
-          <li>
-            <span class="about-icon">✨</span>
-            <div><h3>Your Glow</h3><p>You shine in the calmest ways and it inspires me every day.</p></div>
-          </li>
-          <li>
-            <span class="about-icon">🎀</span>
-            <div><h3>Your Little Habits</h3><p>Those adorable quirks I could watch forever, like a favorite movie.</p></div>
-          </li>
-          <li>
-            <span class="about-icon">🍰</span>
-            <div><h3>Your Sweet Tooth</h3><p>Sharing desserts with you is my favorite kind of trouble.</p></div>
-          </li>
-          <li>
-            <span class="about-icon">💞</span>
-            <div><h3>Your Heart</h3><p>Gentle, brave, and beautiful—everything I admire so much.</p></div>
-          </li>
+          <li class="card reveal"><span class="about-icon">💗</span><div><h3>Your Smile</h3><p>It lights up everything around and makes my day instantly better.</p></div></li>
+          <li class="card reveal"><span class="about-icon">🌸</span><div><h3>Your Kindness</h3><p>The way you care for others is the softest, sweetest magic.</p></div></li>
+          <li class="card reveal"><span class="about-icon">✨</span><div><h3>Your Glow</h3><p>You shine in the calmest ways and it inspires me every day.</p></div></li>
+          <li class="card reveal"><span class="about-icon">🎀</span><div><h3>Your Little Habits</h3><p>Those adorable quirks I could watch forever, like a favorite movie.</p></div></li>
+          <li class="card reveal"><span class="about-icon">🍰</span><div><h3>Your Sweet Tooth</h3><p>Sharing desserts with you is my favorite kind of trouble.</p></div></li>
+          <li class="card reveal"><span class="about-icon">💞</span><div><h3>Your Heart</h3><p>Gentle, brave, and beautiful—everything I admire so much.</p></div></li>
         </ul>
       </div>
     </section>
 
     <!-- Photo Gallery -->
-    <section id="gallery" class="section alt-bg">
+    <section id="gallery" class="section reveal">
       <div class="container">
-        <h2 class="section-title">Our Moments</h2>
+        <h2 class="section-title gradient-text">Our Moments</h2>
         <p class="section-sub">A tiny gallery of warm memories</p>
         <div class="gallery-grid">
-          <img class="gallery-item" src="https://images.unsplash.com/photo-1528439423664-4f6f4f2f1299?q=80&w=1080&auto=format&fit=crop" alt="Roses and light" />
-          <img class="gallery-item" src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1080&auto=format&fit=crop" alt="Heart lights" />
-          <img class="gallery-item" src="https://images.unsplash.com/photo-1460364157752-926555421a7e?q=80&w=1080&auto=format&fit=crop" alt="Warm sunset" />
-          <img class="gallery-item" src="https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?q=80&w=1080&auto=format&fit=crop" alt="Sweet treats" />
-          <img class="gallery-item" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1080&auto=format&fit=crop" alt="Pink vibes" />
-          <img class="gallery-item" src="https://images.unsplash.com/photo-1533000971370-0b26124ea6c1?q=80&w=1080&auto=format&fit=crop" alt="Soft petals" />
+          <figure class="gallery-card reveal"><img class="gallery-item" src="https://images.unsplash.com/photo-1528439423664-4f6f4f2f1299?q=80&w=1080&auto=format&fit=crop" alt="Roses and light" /><figcaption>Roses and light</figcaption></figure>
+          <figure class="gallery-card reveal"><img class="gallery-item" src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1080&auto=format&fit=crop" alt="Heart lights" /><figcaption>Heart lights</figcaption></figure>
+          <figure class="gallery-card reveal"><img class="gallery-item" src="https://images.unsplash.com/photo-1460364157752-926555421a7e?q=80&w=1080&auto=format&fit=crop" alt="Warm sunset" /><figcaption>Warm sunset</figcaption></figure>
+          <figure class="gallery-card reveal"><img class="gallery-item" src="https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?q=80&w=1080&auto=format&fit=crop" alt="Sweet treats" /><figcaption>Sweet treats</figcaption></figure>
+          <figure class="gallery-card reveal"><img class="gallery-item" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1080&auto=format&fit=crop" alt="Pink vibes" /><figcaption>Pink vibes</figcaption></figure>
+          <figure class="gallery-card reveal"><img class="gallery-item" src="https://images.unsplash.com/photo-1533000971370-0b26124ea6c1?q=80&w=1080&auto=format&fit=crop" alt="Soft petals" /><figcaption>Soft petals</figcaption></figure>
         </div>
         <p class="hint">Tip: Tap an image to view it larger</p>
       </div>
     </section>
 
-    <!-- Surprise Me -->
-    <section id="surprise" class="section">
+    <!-- Surprise Me + quote carousel -->
+    <section id="surprise" class="section alt-bg reveal">
       <div class="container center">
-        <h2 class="section-title">Surprise Me</h2>
+        <h2 class="section-title gradient-text">Surprise Me</h2>
         <p class="section-sub">A random note, just for your smile</p>
         <button id="surpriseBtn" class="btn-primary">Surprise Me 💞</button>
+        <div class="quotes card reveal">
+          <span id="quoteText">You are my favorite kind of magic. ✨</span>
+        </div>
       </div>
     </section>
 
     <!-- Music Player -->
-    <section id="music" class="section alt-bg">
+    <section id="music" class="section reveal">
       <div class="container">
-        <h2 class="section-title">Mood Music</h2>
+        <h2 class="section-title gradient-text">Mood Music</h2>
         <p class="section-sub">Soft tunes to make the moment magical</p>
         <div class="player">
           <button id="playPause" class="btn-icon" aria-label="Play/Pause">▶</button>
@@ -169,9 +167,12 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer reveal">
     <p>Made with love • You are special ✨</p>
   </footer>
+
+  <!-- Back to top button -->
+  <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
 
   <!-- Existing main script and logic -->
   <script>
@@ -258,7 +259,7 @@
   </script>
   <script src="a.js"></script>
 
-  <!-- Enhancements: floating hearts, gallery lightbox, surprise button, music player controls, intro animation -->
+  <!-- Enhancements: floating hearts, gallery lightbox, surprise button, music player controls, intro animation, scroll reveal, quotes, top button -->
   <script>
     // Smooth intro fade-out
     window.addEventListener('load', () => {
@@ -268,24 +269,37 @@
       }, 900);
     });
 
-    // Floating hearts background particles
+    // Scroll reveal animations
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('reveal-active');
+      })
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Floating hearts background particles (variety + colors)
     (function heartsParticles(){
+      const glyphs = ['❤','❥','♡','❣','✦','✧','💗','💞'];
+      const colors = ['#ff5a87','#ff6f91','#ff8fab','#ffb3c1','#fb6f92'];
       const random = (min, max) => Math.random() * (max - min) + min;
       setInterval(() => {
         const h = document.createElement('span');
         h.className = 'heart';
-        h.textContent = '❤';
-        const size = random(12, 24); // px
-        const left = random(0, 100); // vw
-        const duration = random(6, 10); // s
-        const delay = random(0, 2); // s
+        h.textContent = glyphs[(Math.random()*glyphs.length)|0];
+        const size = random(12, 22);
+        const left = random(0, 100);
+        const duration = random(7, 12);
+        const delay = random(0, 2);
+        const drift = random(-10, 10);
         h.style.left = left + 'vw';
         h.style.fontSize = size + 'px';
         h.style.animationDuration = duration + 's';
         h.style.animationDelay = delay + 's';
+        h.style.setProperty('--drift', drift + 'vw');
+        h.style.color = colors[(Math.random()*colors.length)|0];
         document.body.appendChild(h);
         setTimeout(() => h.remove(), (duration + delay) * 1000);
-      }, 700);
+      }, 550);
     })();
 
     // Surprise Me button
@@ -299,7 +313,9 @@
       'I’m proud of you. Always. In every little way. 🌸',
       'The world feels sweeter with you in it. 🍓',
       'You make ordinary moments feel special. ✨',
-      'You are loved, today and every day. 💗'
+      'You are loved, today and every day. 💗',
+      'You’re a poem I keep learning by heart. 📖💞',
+      'I love the way you make the quiet feel beautiful. 🌸'
     ];
 
     const surpriseBtn = document.getElementById('surpriseBtn');
@@ -314,6 +330,19 @@
           color: '#333',
         });
       });
+    }
+
+    // Quote carousel (auto-rotating)
+    const quoteEl = document.getElementById('quoteText');
+    if (quoteEl) {
+      let i = 0;
+      setInterval(() => {
+        i = (i + 1) % cuteNotes.length;
+        quoteEl.classList.remove('fade-in');
+        void quoteEl.offsetWidth; // restart animation
+        quoteEl.textContent = cuteNotes[i];
+        quoteEl.classList.add('fade-in');
+      }, 4200);
     }
 
     // Gallery lightbox using SweetAlert
@@ -343,37 +372,36 @@
 
       audio.volume = parseFloat(vol.value || 0.6);
 
-      const setIcon = () => {
-        btn.textContent = audio.paused ? '▶' : '⏸';
-      };
+      const setIcon = () => { btn.textContent = audio.paused ? '▶' : '⏸'; };
 
       btn.addEventListener('click', () => {
         if (audio.paused) { audio.play(); } else { audio.pause(); }
         setIcon();
       });
 
-      vol.addEventListener('input', (e) => {
-        audio.volume = parseFloat(e.target.value);
-      });
+      vol.addEventListener('input', (e) => { audio.volume = parseFloat(e.target.value); });
 
       const updateSeek = () => {
-        if (!isNaN(audio.duration)) {
-          seek.value = (audio.currentTime / audio.duration) * 100;
-        }
+        if (!isNaN(audio.duration)) { seek.value = (audio.currentTime / audio.duration) * 100; }
         requestAnimationFrame(updateSeek);
       };
       updateSeek();
 
       seek.addEventListener('input', (e) => {
-        if (!isNaN(audio.duration)) {
-          audio.currentTime = (parseFloat(e.target.value) / 100) * audio.duration;
-        }
+        if (!isNaN(audio.duration)) { audio.currentTime = (parseFloat(e.target.value) / 100) * audio.duration; }
       });
 
       audio.addEventListener('play', setIcon);
       audio.addEventListener('pause', setIcon);
       setIcon();
     })();
+
+    // Back to top button
+    const toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) toTop.classList.add('show'); else toTop.classList.remove('show');
+    });
+    toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   </script>
 </body>
 </html>
