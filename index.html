@@ -1,61 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5" name="viewport" />
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique:wght@400;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique:wght@400;700&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
-  <link rel="stylesheet" href="./style.css">
   <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
 
-  <!-- Update title and description for a birthday theme -->
-  <title>Happay Birthday Sakshi</title>
-  <link rel="icon" type="image/x-icon" href="https://www.palingit.com/favicon.ico" />
-  <meta name="description" content="A special birthday greeting" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Meta -->
+  <title>Happy Birthday, Sakshi</title>
+  <link rel="icon" type="image/png" href="./v.png" />
+  <meta name="description" content="A special birthday greeting with love" />
 </head>
 
-<body style="background: linear-gradient(to bottom, #ffe1e1, #ff217de0), url(./r.jpg);
-    height: 100vh;">
+<body style="background: linear-gradient(to bottom, #ffe1e1, #ff217de0), url(./r.jpg); min-height: 100vh; background-size: cover; background-attachment: fixed;">
+  <!-- Soft romantic background music (uses your existing mp3) -->
   <audio src="./y2mate (mp3cut.net).mp3" id="linkmp3" class="sembunyi"></audio>
 
-  <div id="bodyblur">
-    <!-- Wallpaper -->
-    <img src="" id="wallpaper" />
+  <!-- Smooth intro overlay -->
+  <div id="intro" aria-hidden="true">
+    <div class="intro-inner">
+      <h1 class="intro-title">For Sakshi</h1>
+      <p class="intro-sub">A little birthday magic, just for you ✨</p>
+    </div>
   </div>
 
+  <!-- Frosted gradient bg layer -->
+  <div id="bodyblur">
+    <img src="" id="wallpaper" alt="" />
+  </div>
+
+  <!-- Original interactive gift content (kept and polished) -->
   <div id="Content">
     <div id="kadoIn">
-      <!-- Gift Button -->
       <img src="./Valentine-Surprise.png" alt="Open Gift Button" />
     </div>
     <p id="ket">
-      <span style="font-style: italic; color: rgb(0,0,0); margin-top: 3px !important; ">Open the gift, cutie:3</span>
+      <span style="font-style: italic; color: rgb(0,0,0); margin-top: 3px !important;">Open the gift, cutie :3</span>
     </p>
 
     <div class="kumpulanstiker" style="margin-top: 95px;">
-      <!-- Stickers for Content -->
-      <img src="https://media.tenor.com/4Ijycn6xFzUAAAAj/mochi-blue-roses.gif" id="fotostiker" />
-      <img src="https://feeldreams.github.io/bunga.gif" id="fotostiker1" />
-      <img src="https://feeldreams.github.io/pandacoklat.gif" id="fotostiker2" />
-      <img src="https://media.tenor.com/snFoLI-S9CQAAAAj/milk-and-mocha.gif" id="fotostiker3" />
-      <img src="https://feeldreams.github.io/emawh.gif" id="fotostiker4" />
-      <img src="https://feeldreams.github.io/pandacoklat.gif" id="fotostiker5" />
+      <img src="https://media.tenor.com/4Ijycn6xFzUAAAAj/mochi-blue-roses.gif" id="fotostiker" alt="sticker" />
+      <img src="https://feeldreams.github.io/bunga.gif" id="fotostiker1" alt="sticker" />
+      <img src="https://feeldreams.github.io/pandacoklat.gif" id="fotostiker2" alt="sticker" />
+      <img src="https://media.tenor.com/snFoLI-S9CQAAAAj/milk-and-mocha.gif" id="fotostiker3" alt="sticker" />
+      <img src="https://feeldreams.github.io/emawh.gif" id="fotostiker4" alt="sticker" />
+      <img src="https://feeldreams.github.io/pandacoklat.gif" id="fotostiker5" alt="sticker" />
     </div>
 
     <p id="halo" class="halo"></p>
 
     <div>
       <blockquote id="bq" data-text="💞">
-        <!-- Update the messages for a birthday greeting -->
-        <p id="kalimat">
-          Happy Birthday, gorgeous! Today is all about celebrating you.
-        </p>
-
-        <!-- Message -->
+        <p id="kalimat">Happy Birthday, gorgeous! Today is all about celebrating you.</p>
         <p id="pesan1">Tap here for your birthday surprise! 🎉</p>
         <div id="kolombaru">
           <li id="lv1">🎂</li>
@@ -67,30 +74,106 @@
         <p id="pesan2">You shine brighter every year! ✨</p>
         <p id="pesan3">Do you know what makes today extra special?</p>
         <p id="pesan4" class="sty2">It’s your birthday!</p>
-        <p id="pesan5" class="sty2">
-          Today, I wish you a year filled with laughter, love, and unforgettable moments.
-        </p>
-        <p id="pesan6" class="sty2">
-          Remember, you deserve every happiness in the world. Celebrate big and enjoy every moment!
-        </p>
+        <p id="pesan5" class="sty2">Today, I wish you a year filled with laughter, love, and unforgettable moments.</p>
+        <p id="pesan6" class="sty2">Remember, you deserve every happiness in the world. Celebrate big and enjoy every moment!</p>
 
-        <!-- Next Button -->
         <p id="opsL">Tap to continue the celebration!</p>
       </blockquote>
     </div>
 
-    <!-- Send Message Button -->
-    <div id="Tombol"><a id="By">&#128140; Next</a></div>
+    <div id="Tombol"><a id="By">💌 Next</a></div>
 
-    <!-- Rejected Message (if needed) -->
     <div id="pesanditolak">
-      <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif" />
-      <p id="kataditolak">
-        Oops! You can’t skip this birthday magic.
-      </p>
+      <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif" alt="sticker" />
+      <p id="kataditolak">Oops! You can’t skip this birthday magic.</p>
     </div>
   </div>
 
+  <!-- Sections for a modern, romantic experience -->
+  <main id="main">
+    <!-- About You -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About You</h2>
+        <p class="section-sub">Little things I adore about you</p>
+        <ul class="about-list">
+          <li>
+            <span class="about-icon">💗</span>
+            <div><h3>Your Smile</h3><p>It lights up everything around and makes my day instantly better.</p></div>
+          </li>
+          <li>
+            <span class="about-icon">🌸</span>
+            <div><h3>Your Kindness</h3><p>The way you care for others is the softest, sweetest magic.</p></div>
+          </li>
+          <li>
+            <span class="about-icon">✨</span>
+            <div><h3>Your Glow</h3><p>You shine in the calmest ways and it inspires me every day.</p></div>
+          </li>
+          <li>
+            <span class="about-icon">🎀</span>
+            <div><h3>Your Little Habits</h3><p>Those adorable quirks I could watch forever, like a favorite movie.</p></div>
+          </li>
+          <li>
+            <span class="about-icon">🍰</span>
+            <div><h3>Your Sweet Tooth</h3><p>Sharing desserts with you is my favorite kind of trouble.</p></div>
+          </li>
+          <li>
+            <span class="about-icon">💞</span>
+            <div><h3>Your Heart</h3><p>Gentle, brave, and beautiful—everything I admire so much.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="gallery" class="section alt-bg">
+      <div class="container">
+        <h2 class="section-title">Our Moments</h2>
+        <p class="section-sub">A tiny gallery of warm memories</p>
+        <div class="gallery-grid">
+          <img class="gallery-item" src="https://images.unsplash.com/photo-1528439423664-4f6f4f2f1299?q=80&w=1080&auto=format&fit=crop" alt="Roses and light" />
+          <img class="gallery-item" src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1080&auto=format&fit=crop" alt="Heart lights" />
+          <img class="gallery-item" src="https://images.unsplash.com/photo-1460364157752-926555421a7e?q=80&w=1080&auto=format&fit=crop" alt="Warm sunset" />
+          <img class="gallery-item" src="https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?q=80&w=1080&auto=format&fit=crop" alt="Sweet treats" />
+          <img class="gallery-item" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1080&auto=format&fit=crop" alt="Pink vibes" />
+          <img class="gallery-item" src="https://images.unsplash.com/photo-1533000971370-0b26124ea6c1?q=80&w=1080&auto=format&fit=crop" alt="Soft petals" />
+        </div>
+        <p class="hint">Tip: Tap an image to view it larger</p>
+      </div>
+    </section>
+
+    <!-- Surprise Me -->
+    <section id="surprise" class="section">
+      <div class="container center">
+        <h2 class="section-title">Surprise Me</h2>
+        <p class="section-sub">A random note, just for your smile</p>
+        <button id="surpriseBtn" class="btn-primary">Surprise Me 💞</button>
+      </div>
+    </section>
+
+    <!-- Music Player -->
+    <section id="music" class="section alt-bg">
+      <div class="container">
+        <h2 class="section-title">Mood Music</h2>
+        <p class="section-sub">Soft tunes to make the moment magical</p>
+        <div class="player">
+          <button id="playPause" class="btn-icon" aria-label="Play/Pause">▶</button>
+          <input id="seek" type="range" min="0" max="100" value="0" aria-label="Seek" />
+          <div class="volume">
+            <span class="vol-ico">🔊</span>
+            <input id="volume" type="range" min="0" max="1" step="0.01" value="0.6" aria-label="Volume" />
+          </div>
+        </div>
+        <p class="hint">Music auto-plays when you open the gift. Use the controls to pause or adjust volume.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made with love • You are special ✨</p>
+  </footer>
+
+  <!-- Existing main script and logic -->
   <script>
     // Main script remains similar; further changes are made in a.js if needed.
     const body = document.querySelector("body");
@@ -174,6 +257,123 @@
     }
   </script>
   <script src="a.js"></script>
-</body>
 
+  <!-- Enhancements: floating hearts, gallery lightbox, surprise button, music player controls, intro animation -->
+  <script>
+    // Smooth intro fade-out
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const intro = document.getElementById('intro');
+        intro.classList.add('hide');
+      }, 900);
+    });
+
+    // Floating hearts background particles
+    (function heartsParticles(){
+      const random = (min, max) => Math.random() * (max - min) + min;
+      setInterval(() => {
+        const h = document.createElement('span');
+        h.className = 'heart';
+        h.textContent = '❤';
+        const size = random(12, 24); // px
+        const left = random(0, 100); // vw
+        const duration = random(6, 10); // s
+        const delay = random(0, 2); // s
+        h.style.left = left + 'vw';
+        h.style.fontSize = size + 'px';
+        h.style.animationDuration = duration + 's';
+        h.style.animationDelay = delay + 's';
+        document.body.appendChild(h);
+        setTimeout(() => h.remove(), (duration + delay) * 1000);
+      }, 700);
+    })();
+
+    // Surprise Me button
+    const cuteNotes = [
+      'You are my favorite kind of magic. ✨',
+      'Your smile is my happy place. 💖',
+      'If I could, I would pause time with you. ⏳💞',
+      'You glow softly, like a dream I never want to end. 🌙',
+      'You are art. Every little thing about you. 🎀',
+      'I hope your day feels like warm sunlight and soft music. ☀️🎶',
+      'I’m proud of you. Always. In every little way. 🌸',
+      'The world feels sweeter with you in it. 🍓',
+      'You make ordinary moments feel special. ✨',
+      'You are loved, today and every day. 💗'
+    ];
+
+    const surpriseBtn = document.getElementById('surpriseBtn');
+    if (surpriseBtn) {
+      surpriseBtn.addEventListener('click', () => {
+        const msg = cuteNotes[Math.floor(Math.random() * cuteNotes.length)];
+        Swal.fire({
+          title: 'A little note',
+          html: `<div style="font-size:18px">${msg}</div>`,
+          confirmButtonText: 'Aww',
+          background: 'rgba(255,255,255,0.95)',
+          color: '#333',
+        });
+      });
+    }
+
+    // Gallery lightbox using SweetAlert
+    document.querySelectorAll('.gallery-item').forEach((img) => {
+      img.addEventListener('click', () => {
+        Swal.fire({
+          imageUrl: img.src,
+          imageAlt: img.alt || 'Photo',
+          showConfirmButton: false,
+          background: 'rgba(255,255,255,0.95)',
+        });
+      });
+    });
+
+    // Music player controls (uses global `audio` created above)
+    (function initPlayer(){
+      const btn = document.getElementById('playPause');
+      const vol = document.getElementById('volume');
+      const seek = document.getElementById('seek');
+      if (!btn || !vol || !seek) return;
+
+      // Ensure audio exists
+      if (typeof audio === 'undefined' || !audio) {
+        try { window.audio = new Audio(document.getElementById('linkmp3').src); } catch(e) {}
+      }
+      if (!audio) return;
+
+      audio.volume = parseFloat(vol.value || 0.6);
+
+      const setIcon = () => {
+        btn.textContent = audio.paused ? '▶' : '⏸';
+      };
+
+      btn.addEventListener('click', () => {
+        if (audio.paused) { audio.play(); } else { audio.pause(); }
+        setIcon();
+      });
+
+      vol.addEventListener('input', (e) => {
+        audio.volume = parseFloat(e.target.value);
+      });
+
+      const updateSeek = () => {
+        if (!isNaN(audio.duration)) {
+          seek.value = (audio.currentTime / audio.duration) * 100;
+        }
+        requestAnimationFrame(updateSeek);
+      };
+      updateSeek();
+
+      seek.addEventListener('input', (e) => {
+        if (!isNaN(audio.duration)) {
+          audio.currentTime = (parseFloat(e.target.value) / 100) * audio.duration;
+        }
+      });
+
+      audio.addEventListener('play', setIcon);
+      audio.addEventListener('pause', setIcon);
+      setIcon();
+    })();
+  </script>
+</body>
 </html>
